@@ -1,0 +1,13 @@
+<div class="search-container d-flex justify-content-center">
+  <form [formGroup]="form" class="group align-self-center">
+      <img class="search-icon" src="../assets/Images/inspect/App BeGo/Contenedores/Cargo Orders/Search/Group/search.svg" alt="">
+      <input 
+        (keyup)="onChangeValue()"
+        formControlName="search" 
+        class="search" 
+        type="text" 
+        placeholder="search" 
+        required="required"/>
+      <span class="line"></span>
+  </form>
+</div>

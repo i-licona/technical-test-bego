@@ -1,0 +1,18 @@
+<div class="card-body" *ngIf="destinations">
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item" style="border: none;">
+      <h2 class="accordion-header" style="background: linear-gradient(45deg, #080C0F 0%, rgba(39,39,39,0) 100%);">
+        <button style="background: #080c0f;color: #FFFF;font-size: 16px;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          Pickup Data
+        </button>
+      </h2>
+      <div style="background: #080c0f;color: #FFFF;font-size: 16px;" id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <p>{{ destinations[0].address }}</p>
+          <p>{{ convertDate(destinations[0].startDate) }}      {{ convertTime(destinations[0].startDate) }}</p>
+          <p>{{ contactInfo.telephone }}</p>
+          <p>{{ contactInfo.email }}</p>
+        </div>
+    </div>
+  </div>
+</div>

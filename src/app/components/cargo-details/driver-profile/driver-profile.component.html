@@ -1,0 +1,13 @@
+<div class="card-body">
+  <img class="driver-profile" src="../assets/Cargo Details Upcoming/Track Card/Driver/Driver.png" alt="" srcset="">
+  <ul style="margin-top: 45px;list-style: none;display: block;" *ngFor="let status of statusList?.pickup">
+    <li style="margin-top: 15px;">
+      <span
+        [ngClass]="{  
+        'approval-dark': !status.active, 
+        'approval': status.active }">
+      </span>
+      <strong style="margin-left: 80px;color: #FFFF;">{{ status.status }}</strong>
+    </li>
+  </ul>
+</div>
